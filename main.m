@@ -1,9 +1,10 @@
 clc, clearvars
 
-x = linspace(0,10,1000);
-y = sin(x);
+x_end = 2.5*pi;
+x = linspace(0,x_end,1000);
+y = cos(x);
 
-baseline = 0.5;
+baseline = 0;
 c = y > baseline;
 y1 = y(c);
 
@@ -15,7 +16,7 @@ if y == sin(x)
     
     plot(x,y)
     hold on
-    plot([0 10], [baseline baseline], "r--")
+    plot([0 x_end], [baseline baseline], "r--")
     hold on
     plot(x1,y1, "Blue", LineWidth = 1)
     hold on
@@ -32,7 +33,7 @@ elseif y == cos(x)
 
     plot(x,y)
     hold on
-    plot([0 10], [baseline baseline], "r--")
+    plot([0 x_end], [baseline baseline], "r--")
     hold on
     plot(x1,y1, "Blue", LineWidth = 1)
     hold on
