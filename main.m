@@ -15,6 +15,8 @@ if y == sin(x)
     
     plot(x,y)
     hold on
+    plot([0 10], [baseline baseline], "r--")
+    hold on
     plot(x1,y1, "Blue", LineWidth = 1)
     hold on
     plot(x2,y1, "Blue", LineWidth = 1)
@@ -30,6 +32,8 @@ elseif y == cos(x)
 
     plot(x,y)
     hold on
+    plot([0 10], [baseline baseline], "r--")
+    hold on
     plot(x1,y1, "Blue", LineWidth = 1)
     hold on
     plot(x2,y1, "Blue", LineWidth = 1)
@@ -41,7 +45,7 @@ xlabel("x")
 ylabel("sin(x)/cos(x)")
 title("sin(x)/cos(x)")
 grid on
-plot([0 10], [baseline baseline], "r--")
+
 legend("sin(x)/cos(x)", "baseline", "above sin(x)/cos(x)")
 
 
