@@ -1,4 +1,4 @@
-# Sin-x-Matlab
+# Sin(x)/cos(x)_Matlab
 
 A MATLAB based script that calculates the percentage of values above a given number for sin(x)/cos(x).
 Also plots the values above the sin(x)/cos(x) graph.
