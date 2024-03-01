@@ -1,10 +1,10 @@
 clc, clearvars
 
-x_end = 2.5*pi;
+x_end = 2.5*pi; %the point at which the x values end.
 x = linspace(0,x_end,1000);
 y = cos(x);
 
-baseline = 0;
+baseline = 0; %the point to be used above which percentage is to be calculate.
 c = y > baseline;
 y1 = y(c);
 
